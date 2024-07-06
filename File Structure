@@ -1,0 +1,12 @@
+Create the database and import the table structure:
+mysql -u username -p password < create.sql
+Configure data import:
+According to the data.ctl file configuration, use the following command to import data from the data.csv file into the database:
+sqlldr userid=username/password control=data.ctl log=import.log
+crew-database-management/
+├── create.sql
+├── data.csv
+├── data.ctl
+├── data.info
+├── export_system.info
+└── table.xml
