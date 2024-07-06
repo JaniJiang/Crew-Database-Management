@@ -3,6 +3,12 @@ mysql -u username -p password < create.sql
 Configure data import:
 According to the data.ctl file configuration, use the following command to import data from the data.csv file into the database:
 sqlldr userid=username/password control=data.ctl log=import.log
+
+Ensure the database is started and correctly configured.
+Use the provided SQL script to create the table structure.
+Use the control file to import data into the database.
+Run SQL queries and other database operations to verify that the data has been correctly imported.
+
 crew-database-management/
 ├── create.sql
 ├── data.csv
